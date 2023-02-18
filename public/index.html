@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOKEPON 🔥💦🌿</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -18,11 +18,11 @@
   <section id="ver-mapa" class="titulo">
     <h2 class="subtitulo">Recorre el Mapa con tu Mokepón</h2>
     <canvas id="mapa"></canvas>
-    <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+    <button ontouchstart="moverArriba()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
     <div>
-      <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
-      <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
-      <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+      <button ontouchstart="moverIzquierda()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+      <button ontouchstart="moverAbajo()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+      <button ontouchstart="moverDerecha()" ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
     </div>
   </section>
   <section id="seleccionar-ataque">
@@ -36,6 +36,7 @@
         <button id="boton-reiniciar">Reiniciar</button>
       </section>
     </div>
+    
     <div class="ataques">
       <div class="ataques-jugador">
         <p id="vidas-jugador">0</p>
@@ -49,6 +50,6 @@
       </div>
     </div>
   </section>
-  <script src="js/codigo.js"></script>
+  <script src="./codigo.js"></script>
 </body>
 </html>

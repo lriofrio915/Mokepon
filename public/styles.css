@@ -130,6 +130,7 @@ input:checked + label {
   color: white;
   font-family: 'Poppins', sans-serif;
   margin: 10px 0; 
+  user-select: none;
 }
 
 
